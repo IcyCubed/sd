@@ -1,0 +1,243 @@
+Unhandled exception: page fault on execute access to 0x0000000000000000 in 64-bit code (0x0000000000000000).
+Register dump:
+ rip:0000000000000000 rsp:00000000238af488 rbp:00000001c88c3290 eflags:00010246 (  R- --  I  Z- -P- )
+ rax:0000000000000000 rbx:00000000238afbb0 rcx:00000000238af5c0 rdx:00000000238af540
+ rsi:0000000000000006 rdi:00000003af6d93c0  r8:00000000238af530  r9:0000000000000074 r10:00007f0d676a1640
+ r11:0000000000000293 r12:00000000238afa70 r13:00000000238af908 r14:00000000238af540 r15:00000001c88c3290
+Stack dump:
+0x00000000238af488:  00000001c889d004 00000001c88c3340
+0x00000000238af498:  00000000139c98e4 00000000238af500
+0x00000000238af4a8:  00000001c88bb13c 000000000000c000
+0x00000000238af4b8:  0000000000000000 00000000000000c0
+0x00000000238af4c8:  00000000238af558 0000000023dc0050
+0x00000000238af4d8:  00000001c889b56a 00000000139c98ef
+0x00000000238af4e8:  ffffffffffffffff 00000000238afad8
+0x00000000238af4f8:  0000000000000002 6b61665c5c3a4322
+0x00000000238af508:  0000226874617065 0000000000020000
+0x00000000238af518:  000000017002a0ed 0000000000000000
+0x00000000238af528:  0000000000000000 0000000000000000
+0x00000000238af538:  0000000000000001 0000000000000000
+Backtrace:
+=>0 0x0000000000000000 (0x00000001c88c3290)
+0x0000000000000000: -- no code accessible --
+Modules:
+Module	Address					Debug info	Name (103 modules)
+PE	0000000000400000-0000000000ed6000	Deferred        unrailedgameepic
+PE	0000000004170000-00000000045ec000	Deferred        mscorlib
+PE	0000000005740000-0000000005836000	Deferred        fna
+PE	0000000005880000-0000000005890000	Deferred        i18n
+PE	00000000058b0000-00000000058ca000	Deferred        i18n.west
+PE	00000000068f0000-0000000006bb4000	Deferred        system
+PE	0000000007720000-00000000077b2000	Deferred        freetype6
+PE	0000000009080000-000000000916f000	Deferred        msvcr120
+PE	000000000dd40000-000000000f36c000	Deferred        eossdk-win64-shipping
+PE	000000000f370000-000000000f3fd000	Deferred        msvcp140
+PE	000000000f400000-000000000f41b000	Deferred        vcruntime140
+PE	000000000ff10000-000000000ff34000	Deferred        system.net.http
+PE	000000000ff40000-000000000ff4c000	Deferred        unrailedcrashdumper
+PE	000000000ff50000-000000000ff90000	Deferred        mono.security
+PE	000000000ffa0000-000000000ffc6000	Deferred        system.configuration
+PE	0000000010000000-0000000010110000	Deferred        system.core
+PE	00000000121d0000-000000001257a000	Deferred        discord_game_sdk
+PE	0000000012de0000-0000000012eac000	Deferred        photonbridge
+PE	0000000012eb0000-0000000012f56000	Deferred        msvcp120
+PE	0000000013160000-000000001346e000	Deferred        system.xml
+PE	0000000013480000-000000001423c000	Deferred        libglesv2
+PE	0000000014640000-00000000146a4000	Deferred        libegl
+PE	0000000016450000-00000000165e6000	Deferred        libmono-btls-x86_64
+PE	0000000017e60000-0000000017e84000	Deferred        system.numerics
+PE	000000006abc0000-000000006abf8000	Deferred        mojoshader
+PE	000000006c740000-000000006c8b2000	Deferred        sdl2
+PE	000000007a850000-000000007a854000	Deferred        opengl32
+PE	000000007b000000-000000007b0da000	Deferred        kernelbase
+PE	000000007b600000-000000007b814000	Deferred        kernel32
+PE	0000000170000000-00000001700a3000	Deferred        ntdll
+PE	0000000180000000-000000018045c000	Deferred        libmono-2.0-x86_64
+PE	00000001c69e0000-00000001c731b000	Deferred        shell32
+PE	00000001c8890000-00000001c88e1000	Deferred        d3dcompiler_47
+PE	00000001c8b40000-00000001c8b60000	Deferred        msacm32
+PE	00000001c8db0000-00000001c8e47000	Deferred        msvcrt
+PE	00000001cd860000-00000001cd868000	Deferred        api-ms-win-crt-utility-l1-1-0
+PE	00000001d7cb0000-00000001d7cc1000	Deferred        wsock32
+PE	00000001d97a0000-00000001d97a7000	Deferred        api-ms-win-core-fibers-l1-1-1
+PE	00000001dd3f0000-00000001dd4bf000	Deferred        crypt32
+PE	00000001e7610000-00000001e7617000	Deferred        normaliz
+PE	00000001ec2b0000-00000001ec2d7000	Deferred        ws2_32
+PE	00000001f51e0000-00000001f51f0000	Deferred        hid
+PE	00000001fc170000-00000001fc185000	Deferred        fusion
+PE	00000001fdfd0000-00000001fdff8000	Deferred        wintrust
+PE	00000001fedf0000-00000001fee05000	Deferred        api-ms-win-crt-private-l1-1-0
+PE	0000000201cf0000-0000000201d0f000	Deferred        secur32
+PE	0000000205950000-0000000205958000	Deferred        api-ms-win-appmodel-runtime-l1-1-2
+PE	000000021a7e0000-000000021a857000	Deferred        setupapi
+PE	0000000226310000-0000000226317000	Deferred        api-ms-win-core-string-l1-1-0
+PE	0000000231ae0000-0000000231b62000	Deferred        rpcrt4
+PE	000000023d820000-000000023da6f000	Deferred        user32
+PE	0000000240030000-000000024005e000	Deferred        iphlpapi
+PE	0000000241850000-0000000241857000	Deferred        api-ms-win-crt-environment-l1-1-0
+PE	0000000262250000-0000000262259000	Deferred        api-ms-win-crt-runtime-l1-1-0
+PE	000000026b4c0000-000000026b53b000	Deferred        gdi32
+PE	00000002739c0000-0000000273af7000	Deferred        oleaut32
+PE	0000000274a50000-0000000274a5d000	Deferred        kerberos
+PE	00000002754c0000-000000027551f000	Deferred        msctfp
+PE	000000028ba60000-000000028ba67000	Deferred        api-ms-win-crt-time-l1-1-0
+PE	000000028dfa0000-000000028dfac000	Deferred        nsi
+PE	000000029cfc0000-000000029cfd6000	Deferred        dnsapi
+PE	000000029e400000-000000029e436000	Deferred        msctf
+PE	000000029ea80000-000000029ea87000	Deferred        api-ms-win-core-datetime-l1-1-1
+PE	00000002bb750000-00000002bb893000	Deferred        comctl32
+PE	00000002d4d40000-00000002d4d57000	Deferred        bcrypt
+PE	00000002d9bc0000-00000002d9bc7000	Deferred        api-ms-win-crt-process-l1-1-0
+PE	00000002de970000-00000002de9a2000	Deferred        rsaenh
+PE	00000002e3540000-00000002e3591000	Deferred        shlwapi
+PE	00000002e8f10000-00000002e902b000	Deferred        ole32
+PE	00000002edf00000-00000002ee15e000	Deferred        dxgi
+PE	00000002f1fa0000-00000002f1fae000	Deferred        version
+PE	00000002f7f20000-00000002f7f2c000	Deferred        vcruntime140_1
+PE	00000002fa030000-00000002fa037000	Deferred        api-ms-win-core-localization-obsolete-l1-2-0
+PE	0000000308050000-000000030809b000	Deferred        dinput8
+PE	000000030a2c0000-000000030a2c9000	Deferred        api-ms-win-crt-stdio-l1-1-0
+PE	000000030c980000-000000030c988000	Deferred        api-ms-win-core-synch-l1-2-0
+PE	00000003126f0000-0000000312709000	Deferred        shcore
+PE	0000000327020000-0000000327073000	Deferred        combase
+PE	000000032a700000-000000032a72a000	Deferred        sechost
+PE	0000000330260000-00000003302a0000	Deferred        advapi32
+PE	000000033ea00000-000000033ea09000	Deferred        api-ms-win-crt-string-l1-1-0
+PE	0000000344840000-0000000344848000	Deferred        api-ms-win-crt-filesystem-l1-1-0
+PE	0000000346ba0000-0000000346bc1000	Deferred        jsproxy
+PE	0000000350a30000-0000000350a39000	Deferred        api-ms-win-crt-convert-l1-1-0
+PE	0000000351680000-0000000351688000	Deferred        api-ms-win-core-localization-l1-2-1
+PE	0000000355100000-0000000355107000	Deferred        api-ms-win-crt-locale-l1-1-0
+PE	0000000356770000-00000003567ab000	Deferred        mscoree
+PE	0000000358120000-0000000358166000	Deferred        winhttp
+PE	0000000359050000-00000003593d5000	Deferred        d3d11
+PE	0000000360a80000-0000000360a8a000	Deferred        api-ms-win-crt-math-l1-1-0
+PE	00000003738e0000-00000003738e8000	Deferred        api-ms-win-crt-conio-l1-1-0
+PE	0000000375610000-0000000375648000	Deferred        win32u
+PE	000000038b5a0000-000000038b5f2000	Deferred        wldap32
+PE	000000039b510000-000000039b518000	Deferred        api-ms-win-crt-heap-l1-1-0
+PE	000000039c2c0000-000000039c2cc000	Deferred        ktmw32
+PE	00000003a37f0000-00000003a37fd000	Deferred        dcomp
+PE	00000003a93b0000-00000003a93c3000	Deferred        xinput1_4
+PE	00000003af670000-00000003af731000	Deferred        ucrtbase
+PE	00000003afd00000-00000003afd1a000	Deferred        imm32
+PE	00000003b6dc0000-00000003b6de8000	Deferred        winevulkan
+PE	00000003b8f00000-00000003b8fc1000	Deferred        winmm
+PE	00000003be590000-00000003be5f4000	Deferred        dbghelp
+PE	00007f0d653a0000-00007f0d653a4000	Deferred        winex11
+Threads:
+process  tid      prio (all id:s are in hex)
+00000020 start.exe
+	00000024    0
+00000038 services.exe
+	["C:\windows\system32\services.exe"]
+	0000003c    0
+	00000040    0
+	0000004c    0
+	00000074    0
+	000000a4    0
+	000000bc    0
+	000000d4    0
+	000000e4    0
+	000000f0    0
+00000044 winedevice.exe
+	[C:\windows\system32\winedevice.exe]
+	00000048    0
+	00000054    0
+	00000058    0
+	0000005c    0
+	000000e0    0
+00000064 winedevice.exe
+	[C:\windows\system32\winedevice.exe]
+	00000068    0
+	00000078    0
+	0000007c    0
+	00000080    0
+	00000084    0
+	00000088    0
+	00000090    0
+	000000b4    0
+	000000b8    0
+0000006c explorer.exe
+	[C:\windows\system32\explorer.exe /desktop]
+	00000070    0
+	00000094    0
+	00000098    0
+000000ac plugplay.exe
+	[C:\windows\system32\plugplay.exe]
+	000000b0    0
+	000000c0    0
+	000000c4    0
+	000000c8    0
+	00000134    0
+	00000138    0
+000000cc svchost.exe
+	[C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted]
+	000000d0    0
+	000000d8    0
+	000000dc    0
+000000e8 rpcss.exe
+	[C:\windows\system32\rpcss.exe]
+	000000ec    0
+	000000f4    0
+	000000f8    0
+	000000fc    0
+	00000100    0
+	00000104    0
+	00000258    0
+0000010c tabtip.exe
+	["C:\windows\system32\tabtip.exe"]
+	00000110    0
+	00000114    0
+	00000118    0
+0000011c (D) Z:\run\user\1000\doc\ffc6ca17\deck\Unrailed\newRoot\UnrailedGameEpic.exe
+	["Z:\run\user\1000\doc\ffc6ca17\deck\Unrailed\newRoot\UnrailedGameEpic.exe" -AUTH_LOGIN=unused -AUTH_PASSWORD=0a7bb7c4f5ba45b798e7c16848d1c541 -AUTH_TYPE=exchangecode -epicapp=76233c0af0a441c7bd541e7d7ab3cde1 -epicenv=Prod -EpicPortal -epicusername=IcyCubed -epicuserid=930ceac14c324420829c76169f7c71cf -epiclocale=en -epicsandboxid=5a6d34ba28bc45d081d9311c3885feef]
+	00000120    1
+	00000124    0
+	00000128    0
+	0000012c    0
+	00000130    0
+	0000013c    0
+	00000140    0
+	00000144    0
+	00000148    0
+	0000014c    0
+	00000150    0
+	00000154    0
+	00000158    0
+	0000015c    1
+	00000160    1
+	00000168    1
+	0000016c    0
+	00000170    0
+	00000174    0
+	00000178    0
+	0000017c    0
+	00000180    0
+	00000184    0
+	00000218    2
+	0000021c    0
+	00000220    0
+	00000224    0
+	00000228    0
+	0000022c    0
+	00000230    0
+	00000234    0 <==
+	00000244    0
+	00000274    0
+00000248 explorer.exe
+	[C:\windows\system32\explorer.exe /desktop]
+	0000024c    0
+	00000250    0
+	00000254    0
+00000260 tabtip.exe
+	["C:\windows\system32\tabtip.exe"]
+	00000264    0
+	00000268    0
+	0000026c    0
+System information:
+    Wine build: wine-5.12-15762-ge9a47cbabb9 (Staging)
+    Platform: x86_64
+    Version: Windows 10
+    Host system: Linux
+    Host version: 5.13.0-valve36-1-neptune
